@@ -4,7 +4,7 @@
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($ch, CURLOPT_URL, 'https://us.api.battle.net/data/sc2/ladder/'.$ladderId.'?locale=en_US&access_token=uwz4ahwk45ufn6wyp7yct8e4');
+  curl_setopt($ch, CURLOPT_URL, 'https://us.api.battle.net/data/sc2/ladder/'.$ladderId.'?locale=en_US&access_token=TOKEN DE ACESSO');
   $result = curl_exec($ch);
   curl_close($ch);
   $obj = json_decode($result);
