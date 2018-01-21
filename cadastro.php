@@ -1,4 +1,4 @@
-<?php include "header.php";
+<?php include "header.php"; ?>
 <div class="container">
   <form action="insert.php" method="post">
     <div class="form-group">
