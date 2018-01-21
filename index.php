@@ -3,14 +3,21 @@ include "header.php";
 include "runmmr.php";
 include "conn.php";
 ?>
+
 <div class="container">
+  <div class="alert alert-primary" role="alert">
+    Para saber como se cadastrar veja o <a href="tutorial.html">tutorial</a>.
+  </div>
 <table id="myTable" class="table table-dark">
   <thead>
   <tr>
-     <th>Name</th>
-     <th>score</th>
+     <th scope="row">Name</th>
+     <th scope="row">score</th>
    </tr>
-   </thead>
+  </thead>
+  <tbody>
+
+
 <?php
 $sql = "SELECT ladderid, charid FROM ranks";
 $result = mysqli_query($conn, $sql);
@@ -23,6 +30,7 @@ if (mysqli_num_rows($result) > 0) {
     }
 }
  ?>
+ </tbody>
  </table>
 
 </div>
@@ -43,7 +51,7 @@ if (mysqli_num_rows($result) > 0) {
         }
       }
     }
-     sortTable();
+    sortTable();
   </script>
 
 <?php
