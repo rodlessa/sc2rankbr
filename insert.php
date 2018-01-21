@@ -16,6 +16,12 @@ if(mysqli_query($conn, $sql)){
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
+$remove = "DELETE FROM ranks WHERE ladderid =0";
+if(mysqli_query($conn, $remove)){
+
+} else{
+
+}
 header('refresh: 10; url=index.php');
 mysqli_close($conn);
 ?>
