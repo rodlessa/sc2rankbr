@@ -1,15 +1,4 @@
 <?php include "header.php";
-require('Client.php');
-require('GrantType/IGrantType.php');
-require('GrantType/AuthorizationCode.php');
-
-$client_id		= '';
-$client_secret		= '';
-$region			= '';
-$locale			= '';
-$redirect_uri		= '';
-?>
-
 <div class="container">
   <form action="insert.php" method="post">
     <div class="form-group">
