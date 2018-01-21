@@ -16,14 +16,12 @@
 
     }else{
       $name = $obj->team[$i]->member[0]->legacy_link->name;
+      $race = $obj->team[$i]->member[0]->played_race_count[0]->race;
       $mmr = $obj->team[$i]->rating;
       echo '<tr class="user">';
-      echo '<td class="user_name">';
-      echo $name;
-      echo '</td>';
-      echo '<td class="user_mmr">';
-      echo $mmr;
-      echo '</td>';
+      echo '<td class="user_name">'.$name." - ".$race.'</td>';
+      echo '<td class="user_mmr">'.$mmr.'</td>';
+      echo "</tr>";
     }
 
     }
